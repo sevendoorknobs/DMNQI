@@ -17,7 +17,7 @@ The **DMNQI** is the quickest way to launch a masternode instance on an Ubuntu b
 SSH to your VPS and clone the Github repository:
 
 ```bash
-git clone https://github.com/sevendoorknobs/DMNQI.git && cd vps
+git clone https://github.com/sevendoorknobs/DMNQI.git && cd DMNQI
 ```
 
 Install & configure your desired master node with options:
