@@ -10,9 +10,9 @@ Please also see the [README for this project](../README.md) that will give you a
 
 ## Intro
 
-This project started as handy bash script to setup my $PIVX masternodes in 2016 when there was almost zero documentation and anything that existed was either $DASH specific, sucked and in most cases both. For that reason, i started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
+This project started as handy bash script to setup my $DIVI masternodes in 2016 when there was almost zero documentation and anything that existed was either $DASH specific, sucked and in most cases both. For that reason, i started to work on a not-so-sucking way to install a lot of different masternodes with next to none manual intervention.
 
-If you are not already aware, visit the project site and join the slack. The website at [https://pivx.org/](https://pivx.org/) is also well worth a visit. 
+If you are not already aware, visit the project site and join the slack. The website at [https://DIVIProject.org/](https://DIVIProject.org/) is also well worth a visit. 
 
 <img src="images/masternode_vps/intro.png" alt="introduction" class="inline"/>
 
@@ -81,16 +81,16 @@ Login to your newly installed node as "root".
 Clone this git repository first:
 
 ```
-git clone https://github.com/masternodes/vps.git && cd vps
+git clone https://github.com/sevendoorknobs/DMNQI.git && cd vps
 ```
 
 
 ## Install the desired masternode and amount
 
-Use the *./install.sh* script with the desired crypto and masternode count as parameters, e.g. to install 4 PIVX masternodes:
+Use the *./install.sh* script with the desired crypto and masternode count as parameters, e.g. to install 4 DIVI masternodes:
 
 ```
-./install.sh -p pivx -c 4
+./install.sh -p DIVI -c 4
 ```
 
 The script downloads, compiles and configures the system now. This will usually take between 5-15 minutes.
@@ -124,10 +124,10 @@ In 99% you can use the generated settings as is. The only value you MUST change 
 
 A script to enable masternode start at boot has been created at */usr/local/bin/activate_masternodes_${CODENAME}.sh* for your convenience. There is exactly one script per installed masternode crypto.
 
-Run it after you finished configuration, e.g. after a PIVX installation do.
+Run it after you finished configuration, e.g. after a DIVI installation do.
 
 ```
-/usr/local/bin/activate_masternodes_pivx
+/usr/local/bin/activate_masternodes_DIVI
 ```     
 
 ## Last step, the controller
@@ -138,7 +138,7 @@ To activate the new nodes in your _local_ (not the VPS) controller wallet, add t
      MN2 [2003:470:1111:1a4:52]:51472 KEY TX OUTPUT
      MN3 [2003:470:1111:1a4:53]:51472 KEY TX OUTPUT
 
-To make this a bit easier for large installations, i implemented a small gimmick in the newest version. Now after the script has run, a partial of the "masternode.conf" file is generated and placed on the VPS eg for XIOS at "/tmp/pivx_masternode.conf"
+To make this a bit easier for large installations, i implemented a small gimmick in the newest version. Now after the script has run, a partial of the "masternode.conf" file is generated and placed on the VPS eg for XIOS at "/tmp/DIVI_masternode.conf"
 
 So you can take the contents from there and paste it into your local controller-wallets masternode.conf all that you need to add is the relevant pieces from "masternode outputs"
 
